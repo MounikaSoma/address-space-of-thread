@@ -1,0 +1,6 @@
+The addresses of the local variabes(l,j,k) change for each thread. Within a certain thread, the addresses remain constant whenever that thread gets a chance to run.
+The global variables have the same address in all threads.
+
+The values of the the global variables printed in each thread is not the same as the value that it is initialised to in that thread.This is because these variables are global and all the functions(threds) have access to it and can change its value. The memory remains the same for the global variables.
+
+The values of the local variables are different in each thread.
